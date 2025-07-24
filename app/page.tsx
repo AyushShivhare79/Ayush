@@ -1,103 +1,167 @@
+"use client";
+
 import Image from "next/image";
+import { MagicCard } from "@/components/magicui/magic-card";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import GitHubCalendar from "react-github-calendar";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <div className="bg-black text-white">
+        <div className="border border-white space-y-7 p-4  h-full w-2/4 mx-auto">
+          <section className="flex my-10 items-center justify-between">
+            <div>
+              <h1 className="text-5xl">Hi, I am Ayush</h1>
+              <InteractiveHoverButton>Work with me</InteractiveHoverButton>
+            </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={
+                "https://pbs.twimg.com/profile_images/1867139291182510080/Bt9Z46O0_400x400.jpg"
+              }
+              alt="Profile Picture"
+              width={200}
+              height={200}
+              className="rounded-full"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </section>
+
+          <section>
+            <p className="text-lg text-gray-600">
+              I am a software engineer with a passion for building full stack
+              web applications. I love working with Next.js, React and Node.js,
+              and I care about clean design, solid architecture, and always
+              learning something new. In my free time, I like to contribute to
+              open-source projects and explore new technologies.
+            </p>
+          </section>
+
+          <section>
+            <Image
+              src="/reviews/4.png"
+              alt="Review Image"
+              width={1000}
+              height={500}
+              className="rounded-lg object-cover"
+            />
+          </section>
+
+          <section>
+            <h1>Projects</h1>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {Array.from({ length: 4 }).map((_, index) => (
+                <Card key={index}>
+                  <CardHeader>
+                    <CardTitle>PHOTO AI</CardTitle>
+                    <CardAction>GITHUB</CardAction>
+                  </CardHeader>
+                  <CardContent>
+                    <p>
+                      PhotoAI lets you turn your words into beautiful images
+                      with the help of AI. Just type what you imagine, and watch
+                      it come to life in a few seconds.
+                    </p>
+                    <div>
+                      <Link href={"https://photoai-images.vercel.app/"}>
+                        photoai-images.vercel.app
+                      </Link>
+                    </div>
+                  </CardContent>
+                  <CardFooter>
+                    <Badge variant="outline">Next.js</Badge>
+                    <Badge variant="outline">Image kit</Badge>
+                    <Badge variant="outline">TypeScript</Badge>
+                  </CardFooter>
+
+                  {/* <div className="p-4 space-y-4">
+                    <h1>PHOTO AI</h1>
+                    <p>
+                      PhotoAI lets you turn your words into beautiful images
+                      with the help of AI. Just type what you imagine, and watch
+                      it come to life in a few seconds.
+                    </p>
+
+                    <div>
+                      <Link href={"https://photoai-images.vercel.app/"}>
+                        photoai-images.vercel.app
+                      </Link>
+                    </div>
+
+                    <div>
+                      <Badge variant="outline">Next.js</Badge>
+                      <Badge variant="outline">Image kit</Badge>
+                      <Badge variant="outline">TypeScript</Badge>
+                    </div>
+                  </div> */}
+                </Card>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <h1>Experience</h1>
+            <div>
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Nocage</AccordionTrigger>
+                  <AccordionContent>
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>Palisadoes foundation</AccordionTrigger>
+                  <AccordionContent>
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>S.W.O.S</AccordionTrigger>
+                  <AccordionContent>
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-O4">
+                  <AccordionTrigger>100Xdevs</AccordionTrigger>
+                  <AccordionContent>
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </section>
+
+          <section>
+            <h1>Github Contribution</h1>
+            <GitHubCalendar username="ayushshivhare79" />
+          </section>
+
+          <section className="text-center">
+            © 2025 Developed with 🩵 by Ayush
+          </section>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </>
   );
 }
