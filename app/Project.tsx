@@ -13,13 +13,15 @@ import {
 import { FaGithub } from "react-icons/fa6";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import data from "@/lib/projects.json";
-import { div } from "motion/react-client";
 
 export default function Projects() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {data.map((project) => (
-        <Card className="bg-black overflow-hidden relative text-white border border-gray-800">
+      {data.map((project, index) => (
+        <Card
+          key={index}
+          className="bg-black overflow-hidden relative text-white border border-gray-800"
+        >
           <CardHeader>
             <CardTitle className="text-2xl">{project.name}</CardTitle>
             <CardAction>

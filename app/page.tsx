@@ -5,8 +5,6 @@ import GitHubCalendar from "react-github-calendar";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 import Projects from "./Project";
 
-import Experience from "./Experience";
-
 export default function Home() {
   return (
     <>
@@ -51,24 +49,28 @@ export default function Home() {
             />
           </section>
 
-          <section className="space-y-2">
-            <h1 className="text-3xl">Projects</h1>
+          <section className="space-y-7">
+            <div className="bg-gray-900 p-2 border-l-4 rounded-md">
+              <h1 className="text-3xl">Projects</h1>
+            </div>
             <Projects />
           </section>
 
-          {/* <section className="space-y-2">
+          {/* <section className="space-y-7">
             <h1 className="text-3xl">Experience</h1>
             <Experience />
           </section> */}
 
-          <section className="space-y-2">
-            <h1 className="text-3xl">Github Contribution</h1>
+          <section className="space-y-7">
+            <div className="bg-gray-900 p-2 border-l-4 rounded-md">
+              <h1 className="text-3xl">Github Contribution</h1>
+            </div>
             <GitHubCalendar username="ayushshivhare79" />
           </section>
 
-          <section className="text-center">
+          <footer className="text-center">
             © 2025 Developed with 🩵 by Ayush
-          </section>
+          </footer>
         </div>
       </div>
     </>
