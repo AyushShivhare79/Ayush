@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Photo AI",
+    "description": "PhotoAI lets you turn your words into beautiful images with the help of AI. Just type what you imagine, and watch it come to life in a few seconds.",
+    "github": "https://github.com/AyushShivhare79/PhotoAI",
+    "link": "https://photoai-images.vercel.app/",
+    "linkText": "photoai-images.vercel.app",
+    "stack": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Image kit",
+      "Postgres",
+      "Prisma"
+    ]
+  },
+  {
+    "name": "Cxchain",
+    "description": "Cxchain is a decentralized exchange (DEX) that allows users to trade cryptocurrencies directly with one another without the need for a centralized authority. It operates on a peer-to-peer network, enabling users to maintain control over their funds and trades.",
+    "github": "https://github.com/AyushShivhare79/Cxchain",
+    "link": "https://cxchain.vercel.app/",
+    "linkText": "cxchain.vercel.app",
+    "stack": ["Next.js", "Tailwind CSS", "TypeScript", "Web3.js"]
+  }
+]
