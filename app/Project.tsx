@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
+import Link from 'next/link';
+import { Badge } from '@/components/ui/badge';
 import {
   Card,
   CardAction,
@@ -9,18 +9,18 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { FaGithub } from "react-icons/fa6";
-import { HiArrowTopRightOnSquare } from "react-icons/hi2";
-import data from "@/lib/projects.json";
+} from '@/components/ui/card';
+import { FaGithub } from 'react-icons/fa6';
+import { HiArrowTopRightOnSquare } from 'react-icons/hi2';
+import data from '@/lib/projects.json';
 
 export default function Projects() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
       {data.map((project, index) => (
         <Card
           key={index}
-          className="bg-black overflow-hidden relative text-white border border-gray-800"
+          className="relative overflow-hidden border border-gray-800 bg-black text-white"
         >
           <CardHeader>
             <CardTitle className="text-2xl">{project.name}</CardTitle>
@@ -36,7 +36,7 @@ export default function Projects() {
 
               <Link
                 target="_blank"
-                className="hover:text-blue-500 text-gray-400"
+                className="text-gray-400 hover:text-blue-500"
                 href={project.link}
               >
                 <span className="flex items-center gap-1">
