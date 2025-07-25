@@ -1,25 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import GitHubCalendar from "react-github-calendar";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import Projects from "./Project";
+
 import Experience from "./Experience";
 
 export default function Home() {
@@ -30,7 +15,9 @@ export default function Home() {
           <section className="flex my-10 items-center justify-between">
             <div className="space-y-10">
               <h1 className="text-6xl">Hi, I am Ayush</h1>
-              <InteractiveHoverButton>Work with me</InteractiveHoverButton>
+              <InteractiveHoverButton className="text-black">
+                Work with me
+              </InteractiveHoverButton>
             </div>
 
             <Image
@@ -69,10 +56,10 @@ export default function Home() {
             <Projects />
           </section>
 
-          <section className="space-y-2">
+          {/* <section className="space-y-2">
             <h1 className="text-3xl">Experience</h1>
             <Experience />
-          </section>
+          </section> */}
 
           <section className="space-y-2">
             <h1 className="text-3xl">Github Contribution</h1>
