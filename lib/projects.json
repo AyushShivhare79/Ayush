@@ -16,7 +16,7 @@
   },
   {
     "name": "Cxchain",
-    "description": "Cxchain is a decentralized exchange (DEX) that allows users to trade cryptocurrencies directly with one another without the need for a centralized authority. It operates on a peer-to-peer network, enabling users to maintain control over their funds and trades.",
+    "description": "CxChain – One-tap Solana wallet powered by Google login. Send, receive, and manage SOL instantly.",
     "github": "https://github.com/AyushShivhare79/Cxchain",
     "link": "https://cxchain.vercel.app/",
     "linkText": "cxchain.vercel.app",
