@@ -4,6 +4,8 @@ import Image from 'next/image';
 import GitHubCalendar from 'react-github-calendar';
 import { InteractiveHoverButton } from '@/components/magicui/interactive-hover-button';
 import Projects from './Project';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -16,13 +18,34 @@ export default function Home() {
               <InteractiveHoverButton className="text-black">Work with me</InteractiveHoverButton>
             </div>
 
-            <Image
-              src={'https://pbs.twimg.com/profile_images/1867139291182510080/Bt9Z46O0_400x400.jpg'}
-              alt="Profile Picture"
-              width={180}
-              height={180}
-              className="rounded-full"
-            />
+            <div>
+              <Image
+                src={
+                  'https://pbs.twimg.com/profile_images/1867139291182510080/Bt9Z46O0_400x400.jpg'
+                }
+                alt="Profile Picture"
+                width={180}
+                height={180}
+                className="rounded-full"
+              />
+              <div className="mt-4 flex justify-center gap-4 text-2xl">
+                <Link
+                  href={'https://www.linkedin.com/in/ayushshivhare51/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin />
+                </Link>
+
+                <Link
+                  href={'https://github.com/AyushShivhare79'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub />
+                </Link>
+              </div>
+            </div>
           </section>
 
           <section>

@@ -3,10 +3,19 @@
     "name": "NoCage",
     "image": "/projects/nocage.png",
     "description": "NoCage is an social media platform ",
-    "github": "*",
+    "github": "#",
     "link": "https://nocage.in/",
     "linkText": "nocage.in",
-    "stack": ["Next.js", "Tailwind CSS", "TypeScript"]
+    "stack": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Image kit",
+      "Postgres",
+      "Prisma",
+      "tRPC",
+      "Socket.io"
+    ]
   },
   {
     "name": "Photo AI",
@@ -15,7 +24,15 @@
     "github": "https://github.com/AyushShivhare79/PhotoAI",
     "link": "https://photoaisocial.vercel.app/",
     "linkText": "photoaisocial.vercel.app",
-    "stack": ["Next.js", "Tailwind CSS", "TypeScript", "Image kit", "Postgres", "Prisma"]
+    "stack": [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Image kit",
+      "Postgres",
+      "Prisma",
+      "OpenAI Client"
+    ]
   },
   {
     "name": "Cxchain",
@@ -28,9 +45,18 @@
   {
     "name": "Strange Meet",
     "description": "Strange Meet is a video chat app that connects you with random people around the world.",
-    "github": "*",
+    "github": "https://github.com/AyushShivhare79/StrangeMeet",
     "link": "https://strangemeet.vercel.app/",
     "linkText": "strangemeet.vercel.app",
-    "stack": ["Next.js", "Tailwind CSS", "TypeScript", "WebRTC", "Socket.io"]
+    "stack": [
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Express",
+      "Mongodb",
+      "Mongoose",
+      "WebRTC",
+      "Socket.io"
+    ]
   }
 ]
