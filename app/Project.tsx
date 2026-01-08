@@ -49,14 +49,12 @@ export default function Projects() {
             </div>
           </CardContent>
 
-          <CardFooter className="absolute bottom-0 flex flex-wrap gap-4 border">
-            <div className="fl">
-              {project.stack.map((tech, index) => (
-                <Badge className="p-2" key={index} variant="default">
-                  <span className="text-sm">{tech}</span>
-                </Badge>
-              ))}
-            </div>
+          <CardFooter className="flex flex-wrap gap-4">
+            {project.stack.map((tech, index) => (
+              <Badge className="p-2" key={index} variant="default">
+                <span className="text-sm">{tech}</span>
+              </Badge>
+            ))}
           </CardFooter>
         </Card>
       ))}
