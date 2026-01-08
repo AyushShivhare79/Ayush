@@ -1,25 +1,36 @@
 [
   {
+    "name": "NoCage",
+    "image": "/projects/nocage.png",
+    "description": "NoCage is an social media platform ",
+    "github": "*",
+    "link": "https://nocage.in/",
+    "linkText": "nocage.in",
+    "stack": ["Next.js", "Tailwind CSS", "TypeScript"]
+  },
+  {
     "name": "Photo AI",
-    "description": "PhotoAI lets you turn your words into beautiful images with the help of AI. Just type what you imagine, and watch it come to life in a few seconds.",
+    "image": "/projects/photoai.png",
+    "description": "PhotoAI lets you turn your words into beautiful images",
     "github": "https://github.com/AyushShivhare79/PhotoAI",
-    "link": "https://photoai-images.vercel.app/",
-    "linkText": "photoai-images.vercel.app",
-    "stack": [
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "Image kit",
-      "Postgres",
-      "Prisma"
-    ]
+    "link": "https://photoaisocial.vercel.app/",
+    "linkText": "photoaisocial.vercel.app",
+    "stack": ["Next.js", "Tailwind CSS", "TypeScript", "Image kit", "Postgres", "Prisma"]
   },
   {
     "name": "Cxchain",
-    "description": "CxChain – One-tap Solana wallet powered by Google login. Send, receive, and manage SOL instantly.",
+    "description": "CxChain – One-tap Solana wallet powered by Google login",
     "github": "https://github.com/AyushShivhare79/Cxchain",
     "link": "https://cxchain.vercel.app/",
     "linkText": "cxchain.vercel.app",
     "stack": ["Next.js", "Tailwind CSS", "TypeScript", "Web3.js"]
+  },
+  {
+    "name": "Strange Meet",
+    "description": "Strange Meet is a video chat app that connects you with random people around the world.",
+    "github": "*",
+    "link": "https://strangemeet.vercel.app/",
+    "linkText": "strangemeet.vercel.app",
+    "stack": ["Next.js", "Tailwind CSS", "TypeScript", "WebRTC", "Socket.io"]
   }
 ]
