@@ -20,16 +20,18 @@ export default function Projects() {
       {data.map((project, index) => (
         <Card
           key={index}
-          className="relative overflow-hidden border border-gray-800 bg-black text-white"
+          className="relative h-80 overflow-hidden border border-gray-800 bg-black text-white"
         >
           <CardHeader>
             <CardTitle className="text-2xl">{project.name}</CardTitle>
+
             <CardAction>
               <Link href={project.github} target="_blank">
                 <FaGithub size={25} />
               </Link>
             </CardAction>
           </CardHeader>
+
           <CardContent>
             <div className="space-y-2">
               <p className="text-gray-300">{project.description}</p>
@@ -46,12 +48,15 @@ export default function Projects() {
               </Link>
             </div>
           </CardContent>
-          <CardFooter className="flex flex-wrap gap-4">
-            {project.stack.map((tech, index) => (
-              <Badge className="p-2" key={index} variant="default">
-                <span className="text-sm">{tech}</span>
-              </Badge>
-            ))}
+
+          <CardFooter className="absolute bottom-0 flex flex-wrap gap-4 border">
+            <div className="fl">
+              {project.stack.map((tech, index) => (
+                <Badge className="p-2" key={index} variant="default">
+                  <span className="text-sm">{tech}</span>
+                </Badge>
+              ))}
+            </div>
           </CardFooter>
         </Card>
       ))}
