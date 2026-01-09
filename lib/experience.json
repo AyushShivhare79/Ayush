@@ -1,0 +1,30 @@
+[
+  {
+    "company": "NoCage",
+    "role": "Full Stack Developer",
+    "duration": "2024 - Present",
+    "description": "Building a social media platform with real-time features using Next.js, tRPC, and Socket.io. Implemented image optimization with ImageKit and designed scalable database architecture with Prisma and PostgreSQL.",
+    "skills": ["Next.js", "TypeScript", "tRPC", "Socket.io", "PostgreSQL", "Prisma"]
+  },
+  {
+    "company": "Palisadoes Foundation",
+    "role": "Open Source Contributor",
+    "duration": "2023 - 2024",
+    "description": "Contributed to Talawa, an open-source project aimed at helping community organizations manage their members. Worked on frontend features and bug fixes.",
+    "skills": ["React", "TypeScript", "GraphQL", "Open Source"]
+  },
+  {
+    "company": "S.W.O.S",
+    "role": "Developer",
+    "duration": "2023",
+    "description": "Worked on building web solutions and gained hands-on experience with modern web development practices and team collaboration.",
+    "skills": ["JavaScript", "React", "Node.js"]
+  },
+  {
+    "company": "100xDevs",
+    "role": "Cohort Member",
+    "duration": "2023 - 2024",
+    "description": "Intensive full-stack development program covering advanced concepts in web development, system design, and DevOps practices.",
+    "skills": ["Full Stack", "System Design", "DevOps", "Web3"]
+  }
+]

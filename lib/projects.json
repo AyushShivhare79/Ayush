@@ -2,16 +2,14 @@
   {
     "name": "NoCage",
     "image": "/projects/nocage.png",
-    "description": "NoCage is an social media platform ",
+    "description": "A social media platform with real-time messaging, optimized media handling, and a scalable architecture built for seamless user interactions.",
     "github": "#",
     "link": "https://nocage.in/",
     "linkText": "nocage.in",
     "stack": [
       "Next.js",
-      "Tailwind CSS",
       "TypeScript",
-      "Image kit",
-      "Postgres",
+      "PostgreSQL",
       "Prisma",
       "tRPC",
       "Socket.io"
@@ -20,41 +18,37 @@
   {
     "name": "Photo AI",
     "image": "/projects/photoai.png",
-    "description": "PhotoAI lets you turn your words into beautiful images",
+    "description": "Transform your ideas into stunning visuals with AI-powered image generation. Simply describe what you want to see.",
     "github": "https://github.com/AyushShivhare79/PhotoAI",
     "link": "https://photoaisocial.vercel.app/",
     "linkText": "photoaisocial.vercel.app",
     "stack": [
       "Next.js",
-      "Tailwind CSS",
       "TypeScript",
-      "Image kit",
-      "Postgres",
+      "PostgreSQL",
       "Prisma",
-      "OpenAI Client"
+      "OpenAI"
     ]
   },
   {
     "name": "Cxchain",
-    "description": "CxChain – One-tap Solana wallet powered by Google login",
+    "description": "One-tap Solana wallet powered by Google login. Simplifying Web3 onboarding with seamless authentication.",
     "github": "https://github.com/AyushShivhare79/Cxchain",
     "link": "https://cxchain.vercel.app/",
     "linkText": "cxchain.vercel.app",
-    "stack": ["Next.js", "Tailwind CSS", "TypeScript", "Web3.js"]
+    "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Web3.js", "Solana"]
   },
   {
     "name": "Strange Meet",
-    "description": "Strange Meet is a video chat app that connects you with random people around the world.",
+    "description": "Connect with random people worldwide through video chat. Real-time peer-to-peer connections powered by WebRTC.",
     "github": "https://github.com/AyushShivhare79/StrangeMeet",
     "link": "https://strangemeet.vercel.app/",
     "linkText": "strangemeet.vercel.app",
     "stack": [
       "React",
-      "Tailwind CSS",
       "TypeScript",
       "Express",
-      "Mongodb",
-      "Mongoose",
+      "MongoDB",
       "WebRTC",
       "Socket.io"
     ]
