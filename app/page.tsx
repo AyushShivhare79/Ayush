@@ -66,40 +66,32 @@ export default function Home() {
             </p>
           </section>
 
-          <section>
-            <Carousel>
-              <CarouselContent>
-                <CarouselItem>
-                  <Image
-                    src="/reviews/image1.png"
-                    alt="Review Image"
-                    width={1000}
-                    height={500}
-                    className="rounded-lg object-cover"
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    src="/reviews/image2.png"
-                    alt="Review Image"
-                    width={1000}
-                    height={500}
-                    className="rounded-lg object-cover"
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    src="/reviews/image3.png"
-                    alt="Review Image"
-                    width={1000}
-                    height={500}
-                    className="rounded-lg object-cover"
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+          <section className="space-y-7">
+            <div className="rounded-md border-l-4 bg-gray-900 p-2">
+              <h1 className="text-3xl">Reviews</h1>
+            </div>
+            <div className="relative w-full">
+              <Carousel className="w-full" opts={{ loop: true }}>
+                <CarouselContent className="-ml-4">
+                  {[1, 2, 3].map((num) => (
+                    <CarouselItem key={num} className="pl-4">
+                      <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-gray-700 bg-gray-900">
+                        <Image
+                          src={`/reviews/image${num}.png`}
+                          alt={`Review Image ${num}`}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-contain p-2"
+                          priority={num === 1}
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="absolute -left-4 border-gray-700 bg-gray-900 text-white hover:bg-gray-800 hover:text-white" />
+                <CarouselNext className="absolute -right-4 border-gray-700 bg-gray-900 text-white hover:bg-gray-800 hover:text-white" />
+              </Carousel>
+            </div>
           </section>
 
           <section className="space-y-7">
