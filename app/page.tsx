@@ -6,16 +6,25 @@ import { InteractiveHoverButton } from '@/components/magicui/interactive-hover-b
 import Projects from './Project';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import Link from 'next/link';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 export default function Home() {
   return (
     <>
       <div className="bg-black text-white">
-        <div className="mx-auto h-full w-2/4 space-y-7 border-r border-l border-gray-700 p-4">
+        <div className="mx-auto h-full w-11/12 space-y-7 border-r border-l border-gray-700 p-4 sm:w-2/4">
           <section className="mt-10 flex items-center justify-between">
             <div className="space-y-8">
-              <h1 className="text-6xl font-semibold">Hi, I am Ayush</h1>
-              <InteractiveHoverButton className="text-black">Work with me</InteractiveHoverButton>
+              <h1 className="text-4xl font-semibold sm:text-6xl">Hi, I am Ayush</h1>
+              <InteractiveHoverButton className="text-md text-black sm:text-xl">
+                Work with me
+              </InteractiveHoverButton>
             </div>
 
             <div>
@@ -49,7 +58,7 @@ export default function Home() {
           </section>
 
           <section>
-            <p className="text-lg leading-relaxed text-gray-500">
+            <p className="text-justify text-lg leading-relaxed text-gray-500">
               I am a software engineer with a passion for building full stack web applications. I
               love working with Next.js, React and Node.js, and I care about clean design, solid
               architecture, and always learning something new. In my free time, I like to contribute
@@ -58,13 +67,39 @@ export default function Home() {
           </section>
 
           <section>
-            <Image
-              src="/reviews/image.png"
-              alt="Review Image"
-              width={1000}
-              height={500}
-              className="rounded-lg object-cover"
-            />
+            <Carousel>
+              <CarouselContent>
+                <CarouselItem>
+                  <Image
+                    src="/reviews/image1.png"
+                    alt="Review Image"
+                    width={1000}
+                    height={500}
+                    className="rounded-lg object-cover"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    src="/reviews/image2.png"
+                    alt="Review Image"
+                    width={1000}
+                    height={500}
+                    className="rounded-lg object-cover"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    src="/reviews/image3.png"
+                    alt="Review Image"
+                    width={1000}
+                    height={500}
+                    className="rounded-lg object-cover"
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </section>
 
           <section className="space-y-7">
