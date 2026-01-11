@@ -43,11 +43,9 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Subtle background gradient */}
       <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900 opacity-50" />
 
       <div className="relative mx-auto h-full w-11/12 space-y-16 border-r border-l border-gray-800 p-4 pb-12 sm:w-3/5 lg:w-2/4">
-        {/* Hero Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,9 +84,11 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <InteractiveHoverButton className="text-md text-black sm:text-xl">
-                Work with me
-              </InteractiveHoverButton>
+              <Link href="mailto:ayushshivhare51@gmail.com">
+                <InteractiveHoverButton className="text-md sm:text-xl">
+                  Work with me
+                </InteractiveHoverButton>
+              </Link>
             </motion.div>
           </div>
 
@@ -98,7 +98,6 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="relative"
           >
-            {/* Glow effect behind image */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 opacity-20 blur-2xl" />
             <Image
               src="https://pbs.twimg.com/profile_images/1867139291182510080/Bt9Z46O0_400x400.jpg"
@@ -110,9 +109,13 @@ export default function Home() {
             />
             <div className="mt-5 flex justify-center gap-4 text-2xl">
               {[
-                { href: 'https://www.linkedin.com/in/ayushshivhare51/', icon: FaLinkedin, label: 'LinkedIn' },
+                {
+                  href: 'https://www.linkedin.com/in/ayushshivhare51/',
+                  icon: FaLinkedin,
+                  label: 'LinkedIn',
+                },
                 { href: 'https://github.com/AyushShivhare79', icon: FaGithub, label: 'GitHub' },
-                { href: 'https://x.com/AyushShivhare79', icon: FaXTwitter, label: 'Twitter' },
+                { href: 'https://x.com', icon: FaXTwitter, label: 'Twitter' },
               ].map((social, i) => (
                 <motion.div
                   key={social.label}
@@ -135,7 +138,6 @@ export default function Home() {
           </motion.div>
         </motion.section>
 
-        {/* About Section */}
         <motion.section
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -144,17 +146,17 @@ export default function Home() {
         >
           <p className="text-justify text-lg leading-relaxed text-gray-400">
             I am a passionate software engineer specializing in building{' '}
-            <span className="text-white">full-stack web applications</span>. I love working with{' '}
+            <span className="text-white">full stack applications</span>. I love working with{' '}
             <span className="text-cyan-400">Next.js</span>,{' '}
             <span className="text-cyan-400">React</span>, and{' '}
             <span className="text-cyan-400">Node.js</span>, and I care about clean design, solid
-            architecture, and always learning something new. In my free time, I contribute to
-            open-source projects and explore emerging technologies.
+            architecture, and always learning something new. In my free time, I contribute to open
+            source projects and explore emerging technologies.
           </p>
         </motion.section>
 
         {/* Skills Section */}
-        <section className="space-y-7">
+        {/* <section className="space-y-7">
           <SectionTitle>Skills</SectionTitle>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {skills.map((skill, index) => (
@@ -182,7 +184,7 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Reviews Section */}
         <section className="space-y-7">
@@ -249,8 +251,7 @@ export default function Home() {
           </motion.div>
         </section>
 
-        {/* Contact Section */}
-        <section className="space-y-7">
+        {/* <section className="space-y-7">
           <SectionTitle>Get In Touch</SectionTitle>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -260,8 +261,8 @@ export default function Home() {
             className="rounded-lg border border-gray-800 bg-gray-900/50 p-6 text-center"
           >
             <p className="mb-6 text-gray-400">
-              I&apos;m always open to discussing new projects, creative ideas, or opportunities to be
-              part of your vision.
+              I&apos;m always open to discussing new projects, creative ideas, or opportunities to
+              be part of your vision.
             </p>
             <Link
               href="mailto:ayushshivhare79@gmail.com"
@@ -271,16 +272,15 @@ export default function Home() {
               Say Hello
             </Link>
           </motion.div>
-        </section>
+        </section> */}
 
-        {/* Footer */}
         <motion.footer
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="border-t border-gray-800 pt-8 text-center text-gray-500"
         >
-          <p>© 2025 Developed with 🩵 by Ayush Shivhare</p>
+          <p>© 2026 Developed with 🩵 by Ayush Shivhare</p>
           <p className="mt-2 text-sm text-gray-600">Built with Next.js & Tailwind CSS</p>
         </motion.footer>
       </div>

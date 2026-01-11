@@ -1,30 +1,23 @@
 [
   {
-    "company": "NoCage",
+    "company": "Freelance",
     "role": "Full Stack Developer",
-    "duration": "2024 - Present",
-    "description": "Building a social media platform with real-time features using Next.js, tRPC, and Socket.io. Implemented image optimization with ImageKit and designed scalable database architecture with Prisma and PostgreSQL.",
-    "skills": ["Next.js", "TypeScript", "tRPC", "Socket.io", "PostgreSQL", "Prisma"]
-  },
-  {
-    "company": "Palisadoes Foundation",
-    "role": "Open Source Contributor",
-    "duration": "2023 - 2024",
-    "description": "Contributed to Talawa, an open-source project aimed at helping community organizations manage their members. Worked on frontend features and bug fixes.",
-    "skills": ["React", "TypeScript", "GraphQL", "Open Source"]
+    "duration": "August 2024 - Present",
+    "description": "Developed and maintained websites for various clients, ensuring responsive design and optimal performance. Collaborated closely with clients to meet their specific needs and deliver high-quality solutions.",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"]
   },
   {
     "company": "S.W.O.S",
-    "role": "Developer",
-    "duration": "2023",
+    "role": "Full Stack Developer",
+    "duration": "May 2025 - June 2025",
     "description": "Worked on building web solutions and gained hands-on experience with modern web development practices and team collaboration.",
-    "skills": ["JavaScript", "React", "Node.js"]
+    "skills": ["JavaScript", "Next.js", "Node.js", "MongoDB", "Express.js", "graphQL"]
   },
   {
-    "company": "100xDevs",
-    "role": "Cohort Member",
-    "duration": "2023 - 2024",
-    "description": "Intensive full-stack development program covering advanced concepts in web development, system design, and DevOps practices.",
-    "skills": ["Full Stack", "System Design", "DevOps", "Web3"]
+    "company": "NoCage",
+    "role": "Full Stack Developer",
+    "duration": "November 2024 - December 2024",
+    "description": "Building a social media platform with real-time features using Next.js, tRPC, and Socket.io. Implemented image optimization with ImageKit and designed scalable database architecture with Prisma and PostgreSQL.",
+    "skills": ["Next.js", "TypeScript", "tRPC", "Socket.io", "PostgreSQL", "Prisma"]
   }
 ]

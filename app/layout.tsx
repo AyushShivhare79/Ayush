@@ -46,8 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ayush Shivhare | Full Stack Developer',
-    description:
-      'Full Stack Developer specializing in Next.js, React, and Node.js.',
+    description: 'Full Stack Developer specializing in Next.js, React, and Node.js.',
     creator: '@AyushShivhare79',
   },
   robots: {

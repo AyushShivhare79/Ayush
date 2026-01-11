@@ -46,7 +46,7 @@ export default function Projects() {
             </CardHeader>
             <CardContent className="relative">
               <div className="space-y-3">
-                <p className="text-gray-400 leading-relaxed">{project.description}</p>
+                <p className="leading-relaxed text-gray-400">{project.description}</p>
                 <Link
                   target="_blank"
                   className="inline-flex items-center gap-1 text-gray-500 transition-colors hover:text-cyan-400"
@@ -54,7 +54,10 @@ export default function Projects() {
                 >
                   <span className="flex items-center gap-1">
                     {project.linkText}
-                    <HiArrowTopRightOnSquare size={17} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    <HiArrowTopRightOnSquare
+                      size={17}
+                      className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
                   </span>
                 </Link>
               </div>
