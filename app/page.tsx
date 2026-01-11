@@ -28,6 +28,16 @@ const skills = [
   { name: 'Docker', level: 65 },
 ];
 
+const social = [
+  {
+    href: 'https://www.linkedin.com/in/ayushshivhare51/',
+    icon: FaLinkedin,
+    label: 'LinkedIn',
+  },
+  { href: 'https://github.com/AyushShivhare79', icon: FaGithub, label: 'GitHub' },
+  { href: 'https://x.com', icon: FaXTwitter, label: 'Twitter' },
+];
+
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
   <motion.div
     initial={{ opacity: 0, x: -20 }}
@@ -98,7 +108,6 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="relative"
           >
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 opacity-20 blur-2xl" />
             <Image
               src="https://pbs.twimg.com/profile_images/1867139291182510080/Bt9Z46O0_400x400.jpg"
               alt="Ayush Shivhare"
@@ -108,26 +117,18 @@ export default function Home() {
               priority
             />
             <div className="mt-5 flex justify-center gap-4 text-2xl">
-              {[
-                {
-                  href: 'https://www.linkedin.com/in/ayushshivhare51/',
-                  icon: FaLinkedin,
-                  label: 'LinkedIn',
-                },
-                { href: 'https://github.com/AyushShivhare79', icon: FaGithub, label: 'GitHub' },
-                { href: 'https://x.com', icon: FaXTwitter, label: 'Twitter' },
-              ].map((social, i) => (
+              {social.map((social, i) => (
                 <motion.div
                   key={social.label}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + i * 0.1 }}
+                  className="text-gray-400 transition-all duration-300 hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]"
                 >
                   <Link
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 transition-all duration-300 hover:text-cyan-400 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]"
                     aria-label={social.label}
                   >
                     <social.icon />
