@@ -46,7 +46,7 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
     transition={{ duration: 0.5 }}
     className="rounded-md border-l-4 border-cyan-500 bg-gray-900/80 p-3"
   >
-    <h2 className="text-2xl font-semibold sm:text-3xl">{children}</h2>
+    <h2 className="text-xl font-semibold sm:text-3xl md:text-2xl">{children}</h2>
   </motion.div>
 );
 
@@ -187,7 +187,6 @@ export default function Home() {
           </div>
         </section> */}
 
-        {/* Reviews Section */}
         <section className="space-y-7">
           <SectionTitle>Reviews</SectionTitle>
           <motion.div
@@ -220,19 +219,16 @@ export default function Home() {
           </motion.div>
         </section>
 
-        {/* Projects Section */}
         <section className="space-y-7">
           <SectionTitle>Projects</SectionTitle>
           <Projects />
         </section>
 
-        {/* Experience Section */}
         <section className="space-y-7">
           <SectionTitle>Experience</SectionTitle>
           <Experience />
         </section>
 
-        {/* GitHub Contribution Section */}
         <section className="space-y-7">
           <SectionTitle>GitHub Contributions</SectionTitle>
           <motion.div
