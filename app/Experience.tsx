@@ -18,7 +18,6 @@ export default function Experience() {
           transition={{ duration: 0.5, delay: index * 0.1 }}
           className="relative pl-8"
         >
-          {/* Timeline dot */}
           <div className="absolute top-2 left-0 h-4 w-4 rounded-full border-2 border-cyan-500 bg-black" />
 
           <div className="group rounded-lg border border-gray-800 bg-gray-900/50 p-4 transition-all duration-300 hover:border-gray-700 hover:bg-gray-900">
@@ -27,7 +26,7 @@ export default function Experience() {
               <span className="text-sm text-cyan-400">{exp.duration}</span>
             </div>
             <p className="mb-2 text-sm font-medium text-gray-400">{exp.role}</p>
-            <p className="mb-4 text-gray-500">{exp.description}</p>
+            <p className="mb-4 leading-relaxed text-gray-500">{exp.description}</p>
             <div className="flex flex-wrap gap-2">
               {exp.skills.map((skill, i) => (
                 <Badge key={i} variant="outline" className="border-gray-700 text-xs text-gray-400">

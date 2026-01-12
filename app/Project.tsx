@@ -17,7 +17,7 @@ import data from '@/lib/projects.json';
 
 export default function Projects() {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       {data.map((project, index) => (
         <motion.div
           key={index}
@@ -27,7 +27,6 @@ export default function Projects() {
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
           <Card className="group relative h-80 overflow-hidden border border-gray-800 bg-gradient-to-br from-gray-900 to-black text-white transition-all duration-300 hover:border-gray-600 hover:shadow-lg hover:shadow-cyan-500/10">
-            {/* Gradient overlay on hover */}
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-purple-500/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
             <CardHeader className="relative">
